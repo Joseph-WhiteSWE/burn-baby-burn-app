@@ -7,7 +7,7 @@ import Animated, {FadeIn, FadeOut, FadeInDown} from 'react-native-reanimated'
 import { useRouter } from 'expo-router'
 
 
-export default function Index() {
+export default function Welcome() {
   const router = useRouter()
   return (
     <View className="flex-1 justify-end">
@@ -33,6 +33,7 @@ export default function Index() {
 
       <Animated.View entering={FadeInDown.delay(200).springify()}>
         <TouchableOpacity
+        //push to navigate to home screen
         onPress={()=> router.push('home')}
         style={{height: hp(7), width: wp(80)}}
         className="bg-red-500 flex items-center justify-center mx-auto rounded-full border-[2px] border-neutral-200"
