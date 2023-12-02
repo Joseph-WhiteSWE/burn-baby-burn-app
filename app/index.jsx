@@ -7,7 +7,7 @@ import Animated, {FadeIn, FadeOut, FadeInDown} from 'react-native-reanimated'
 import { useRouter } from 'expo-router'
 
 
-export default function Welcome() {
+export default function Index() {
   const router = useRouter()
   return (
     <View className="flex-1 justify-end">
