@@ -12,7 +12,7 @@ import { useRouter } from "expo-router";
 export default function Index() {
   const router = useRouter();
   return (
-    // extends the view to full screen
+    // extends View to full screen
     <View className="flex-1 justify-end">
       <StatusBar style="light" />
 
@@ -45,7 +45,7 @@ export default function Index() {
             style={{ fontSize: hp(5) }}
             className="text-white font-bold tracking-wide"
           >
-            For you
+            For You
           </Text>
         </Animated.View>
 
@@ -55,7 +55,7 @@ export default function Index() {
             //use expo router to navigate components
             onPress={() => router.push("home")}
             style={{ height: hp(7), width: wp(80) }}
-            className="bg-red-600 flex items-center justify-center mx-auto rounded-full border-[2px] border-neutral-200"
+            className="bg-red-600 flex items-center justify-center mx-auto rounded-full"
           >
             <Text
               style={{ fontSize: hp(3) }}

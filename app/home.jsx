@@ -7,6 +7,7 @@ import {
   heightPercentageToDP as hp,
 } from "react-native-responsive-screen";
 import Ionicons from "react-native-vector-icons/Ionicons";
+import ImageSlider from "../components/ImageSlider";
 
 export default function Home() {
   return (
@@ -38,11 +39,15 @@ export default function Home() {
           />
           <View
             className="flex bg-neutral-200 rounded-full items-center justify-center"
-            style={{ width: wp(11), height: hp(5) }}
+            style={{ width: wp(9), height: hp(5) }}
           >
             <Ionicons name="notifications" size={hp(3)} color="gray" />
           </View>
         </View>
+      </View>
+      {/* image slider */}
+      <View>
+        <ImageSlider />
       </View>
     </SafeAreaView>
   );
